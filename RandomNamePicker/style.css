@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+*{
+font-family: "Teko",sans-serif;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pickWinner{
+    opacity: 0%;
+    width: 0px;
+}
+
+li{
+
+   list-style: none;
+   font-size: 2rem;
+   color: white;
+   
+}
+
+#removeName {
+
+    border-radius: 25%;
+   background-color: black;
+   display: inline;
+    margin-right: 10px;
+}
+
+#nameInput{
+    width: 245px;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 25px;
+}
+
+#addName{
+    width: 125px;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 25px;
+    border-color: palevioletred;
+}
+
+#nameList{
+    margin-top: 0px;
+   display: inline;
+   max-width: 250px;
+   align-items: center;
+   justify-content: center;
+}
+
+h1{
+    color: white;
+}
+
+#actions{
+    display: flex;
+    justify-content: space-between;
+    gap:0px;
+    align-items: center;
+    flex-direction: row;
+}
+
+#winner {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#winner.show {
+    opacity: 1; 
+}
